@@ -151,7 +151,7 @@ body {
 }
 .card img:hover {
   transform: scale(1.1);
-  transition: 4s ease-in-out;
+  transition: 1s ease-out;
 }
 .card-para {
   padding-bottom: 30px;
@@ -300,12 +300,19 @@ footer {
     margin-bottom: 150px;
     width: 500px;
   }
+
   .display-text {
     grid-template-columns: repeat(1, 1fr);
     font-size: 40px;
     margin-left: 35px;
     font-size: 15px;
     width: 300px;
+  }
+  .display img {
+    width: 350px;
+    height: 350px;
+    margin-top: 300px;
+    margin-left: 5px;
   }
   .logs {
     display: none;
@@ -322,22 +329,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .title {
-    font-size: 20px;
-    margin-left: 10%;
-    padding-left: 10px;
-    padding-bottom: 10px;
-  }
 
-  .display img {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 300px;
-    margin-top: 330px;
-    border-radius: 50%;
-    margin-left: 35px;
-  }
   .para {
     margin-top: -450px;
     margin-bottom: 50px;
@@ -375,5 +367,78 @@ footer {
     width: 350px;
     height: 250;
     margin-left: 40px;
+  }
+}
+/* -----------tablet devices--------- */
+
+@media only screen and (max-width: 992px) {
+  .display-text {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 5px;
+    width: 300px;
+    margin-left: 15px;
+    margin-top: 350px;
+  }
+  .title {
+    text-align: center;
+    width: 700px;
+    font-size: 40px;
+    margin-left: 10%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .journey {
+    font-size: 50px;
+    padding-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .display img {
+    width: 350px;
+    height: 350px;
+    margin-top: 270px;
+    border-radius: 50%;
+    margin-left: 90px;
+  }
+  .para {
+    margin-left: 20px;
+  }
+  .link-button {
+    margin: 30px 40px;
+  }
+  .logs {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .popular {
+    margin-left: 0px;
+    margin-top: 250px;
+  }
+  .all-cards-together {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+  }
+  span {
+    margin-left: 600px;
+  }
+  .photo-frame {
+    margin: 90px 15px;
+    width: 445px;
+    height: 450px;
+  }
+  .footer {
+    width: 100px;
+  }
+  .footer-text {
+    width: 350px;
+    height: 250;
+    margin-left: 300px;
+  }
+  .footer-icon {
+    margin-left: 300px;
   }
 }
