@@ -130,6 +130,9 @@ body {
   transform: scale(1.1);
   transition: 1s ease-out;
 }
+.card-section {
+  position: relative;
+}
 .all-cards-together {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -188,9 +191,10 @@ body {
 }
 /* products collection end  */
 #see {
+  position: absolute;
+  bottom: -2%;
+  right: 15%;
   height: 15px;
-  width: 100px;
-  padding: 16px;
   font-weight: 700;
   font-size: 20px;
   font-family: "Lato", sans-serif;
@@ -345,14 +349,18 @@ footer {
   .card img {
     padding: 5px 15px;
   }
-  span {
-    margin-left: 200px;
+  #see {
+    left: 300px;
+    bottom: -7.5%;
+    height: 15px;
+    font-size: 20px;
   }
+
   .photo-album {
     display: block;
   }
   .photo-frame {
-    margin: 30px 15px;
+    margin: 50px 15px;
     width: 345px;
     height: 350px;
   }
@@ -422,9 +430,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 100px;
   }
-  span {
-    margin-left: 600px;
-  }
+
   .photo-frame {
     margin: 90px 15px;
     width: 445px;
