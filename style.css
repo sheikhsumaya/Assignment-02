@@ -29,6 +29,7 @@ body {
   position: absolute;
   margin-top: 30px;
   padding-top: 30px;
+  color: rgba(59, 40, 14, 0.712);
 }
 #menu-text {
   padding-right: 80px;
@@ -91,11 +92,11 @@ body {
 .link-button {
   text-decoration: none;
   background-image: linear-gradient(
-    rgba(60, 126, 212, 0.788),
+    rgba(206, 184, 128, 0.788),
     rgba(192, 65, 165, 0.856)
   );
   padding: 10px 40px;
-  color: rgb(82, 43, 43);
+  color: rgba(236, 230, 220, 0.712);
   font-weight: 700;
   font-family: "Lato", sans-serif;
   border-radius: 10px;
@@ -118,14 +119,16 @@ body {
 }
 /* logos style end  */
 /* products collection start  */
-#popular {
-  width: 30%;
+.popular {
   margin-top: 100px;
-  margin-left: 500px;
+  text-align: center;
   font-family: "Lobster", cursive;
-  padding-left: 60px;
   font-size: 40px;
   color: rgba(59, 40, 14, 0.712);
+}
+.popular:hover {
+  transform: scale(1.1);
+  transition: 1s ease-out;
 }
 .all-cards-together {
   display: grid;
@@ -134,7 +137,6 @@ body {
   margin-right: 200px;
   margin-left: 200px;
 }
-
 .card {
   background-color: rgba(209, 183, 143, 0.712);
   margin: 20px 10px;
@@ -147,6 +149,10 @@ body {
   height: 300px;
   width: 300px;
 }
+.card img:hover {
+  transform: scale(1.1);
+  transition: 4s ease-in-out;
+}
 .card-para {
   padding-bottom: 30px;
   font-family: "Lato", sans-serif;
@@ -157,7 +163,7 @@ body {
   margin-top: 10px;
 }
 .fa-star.filled {
-  color: #ffc014;
+  color: #caa02d;
 }
 .fa-star.empty {
   color: #aeaeae;
@@ -182,7 +188,6 @@ body {
 }
 /* products collection end  */
 #see {
-  position: relative;
   height: 15px;
   width: 100px;
   padding: 16px;
@@ -191,7 +196,6 @@ body {
   font-family: "Lato", sans-serif;
   color: rgb(12, 12, 11);
   border-radius: 30px;
-  margin-left: 1170px;
 }
 /* main section end  */
 /* new section  */
@@ -223,7 +227,7 @@ body {
   border-radius: 10px;
 }
 .photo-detail h3 {
-  color: rgb(12, 12, 11);
+  color: rgba(26, 2, 2, 0.959);
   text-align: center;
   width: 800px;
   height: 100px;
@@ -249,17 +253,18 @@ body {
   background-color: rgba(90, 59, 19, 0.637);
 }
 .photo-frame:hover .photo {
-  transform: scale(1.5);
-  transition: transform 4s ease-in;
+  transform: scale(1.9);
+  transition: transform 6s ease-in-out;
 }
 /* button end */
 #awasome {
-  width: 400px;
+  width: 350px;
   margin-left: 30px;
   font-weight: 900px;
   font-size: 70px;
   font-family: "Lobster", cursive;
   margin-top: 100px;
+  color: rgb(82, 43, 43);
 }
 .awasome-button {
   margin-left: 30px;
@@ -269,7 +274,7 @@ body {
 footer {
   background-color: rgba(26, 2, 2, 0.959);
   padding-block: 20px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .footer-text {
   color: #aeaeae;
@@ -291,15 +296,84 @@ footer {
 
 /* ---  Mobile Devices --- */
 @media only screen and (max-width: 688px) {
-  .information,
-  .display-text,
-  .top {
-    width: 100%;
-    grid-template-rows: repeat(1, 1fr);
+  header {
+    margin-bottom: 150px;
+    width: 500px;
   }
-
-  .menu-bar,
+  .display-text {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 40px;
+    margin-left: 35px;
+    font-size: 15px;
+    width: 300px;
+  }
   .logs {
     display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .information {
+    display: block;
+  }
+  .journey {
+    font-size: 40px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 20px;
+    margin-left: 10%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .display img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 330px;
+    border-radius: 50%;
+    margin-left: 35px;
+  }
+  .para {
+    margin-top: -450px;
+    margin-bottom: 50px;
+  }
+  .popular {
+    margin-left: 0px;
+  }
+  .all-cards-together {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 8px;
+  }
+  .card img {
+    padding: 5px 15px;
+  }
+  span {
+    margin-left: 200px;
+  }
+  .photo-album {
+    display: block;
+  }
+  .photo-frame {
+    margin: 30px 15px;
+    width: 345px;
+    height: 350px;
+  }
+  #awasome {
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+  .footer {
+    width: 100px;
+  }
+  .footer-text {
+    width: 350px;
+    height: 250;
+    margin-left: 40px;
   }
 }
