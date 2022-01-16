@@ -287,8 +287,9 @@ footer {
   font-family: "Lato", sans-serif;
 }
 .footer-icon {
+  position: relative;
+  left: 40%;
   color: #aeaeae;
-  margin-left: 610px;
   font-size: 30px;
 }
 .fab {
@@ -377,7 +378,8 @@ footer {
     margin-left: 40px;
   }
   .footer-icon {
-    margin-left: 300px;
+    display: flex;
+    padding-left: 45px;
   }
 }
 /* -----------tablet devices--------- */
