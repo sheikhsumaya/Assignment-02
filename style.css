@@ -376,6 +376,9 @@ footer {
     height: 250;
     margin-left: 40px;
   }
+  .footer-icon {
+    margin-left: 300px;
+  }
 }
 /* -----------tablet devices--------- */
 
