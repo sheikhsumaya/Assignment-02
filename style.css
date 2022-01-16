@@ -62,7 +62,7 @@ body {
   display: flex;
 }
 .display-text {
-  margin-top: 500px;
+  margin-top: 100%;
 }
 
 .display img {
@@ -282,14 +282,14 @@ footer {
 }
 .footer-text {
   color: #aeaeae;
-  margin-left: 600px;
+  text-align: center;
   font-weight: 700;
   font-family: "Lato", sans-serif;
 }
 .footer-icon {
-  position: relative;
-  left: 40%;
   color: #aeaeae;
+  position: relative;
+  text-align: center;
   font-size: 30px;
 }
 .fab {
@@ -302,8 +302,8 @@ footer {
 /* ---  Mobile Devices --- */
 @media only screen and (max-width: 688px) {
   header {
-    margin-bottom: 150px;
-    width: 500px;
+    margin-bottom: 550px;
+    width: 100%;
   }
 
   .display-text {
@@ -316,7 +316,7 @@ footer {
   .display img {
     width: 350px;
     height: 350px;
-    margin-top: 300px;
+    margin-top: 350px;
     margin-left: 5px;
   }
   .logs {
@@ -327,6 +327,7 @@ footer {
   }
   .information {
     display: block;
+    width: 70%;
   }
   .journey {
     font-size: 40px;
@@ -336,9 +337,9 @@ footer {
   }
 
   .para {
-    margin-top: -450px;
-    margin-bottom: 50px;
+    margin-top: -330px;
   }
+
   .popular {
     margin-left: 0px;
   }
@@ -373,13 +374,13 @@ footer {
     width: 100px;
   }
   .footer-text {
-    width: 350px;
-    height: 250;
+    width: 300px;
     margin-left: 40px;
   }
   .footer-icon {
+    margin-left: 0px;
     display: flex;
-    padding-left: 45px;
+    justify-content: center;
   }
 }
 /* -----------tablet devices--------- */
@@ -441,15 +442,11 @@ footer {
     width: 445px;
     height: 450px;
   }
-  .footer {
-    width: 100px;
-  }
+
   .footer-text {
-    width: 350px;
-    height: 250;
-    margin-left: 300px;
+    text-align: center;
   }
   .footer-icon {
-    margin-left: 300px;
+    text-align: center;
   }
 }
