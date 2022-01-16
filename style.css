@@ -367,6 +367,11 @@ footer {
     width: 345px;
     height: 350px;
   }
+  .photo-detail {
+    width: 800px;
+    height: 500px;
+    top: 0%;
+  }
   #awasome {
     margin-left: 5%;
     margin-top: 15px;
